@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 100vh;
+    background:white;
+    padding-top: 80px;
+    /* background: linear-gradient(#4F6D7A ,#8ea9b4 ); */
+}
+.parent{
+    width:330px ;
+    height:400px ;
+    background: #060124;
+    margin:auto;
+    border-radius: 15px;
+    padding-top:25px ;
+}
+.container-fluid .parent h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 13px;
+    color: aliceblue;
+}
+.container-fluid .parent p{
+  font-size: 14px;
+    text-align: center; 
+    color: aliceblue;  
+}
+.signup form{
+    width: 90%;
+    margin: auto;
+}
+.signup form label{
+    display: block;
+    color: aliceblue;
+}
+.signup form input{
+display: block;
+width: 100%;
+margin-bottom: 5px;
+height: 35px;
+outline: none;
+}
+#sign-up{
+    width: 90px;
+    margin: 15px  auto;
+}
+.sign{
+    color: white;
+}

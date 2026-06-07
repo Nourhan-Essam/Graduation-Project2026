@@ -1,0 +1,164 @@
+/* Palette Colors */
+:root {
+    --deep-navy: #001233;   /* Background */
+    --card-blue: #001845;   /* Form & Card background */
+    --input-blue: #002855;  /* Input fields */
+    --accent-blue: #0466C8; /* Headers / Titles */
+    --text-muted: #7D8597;  /* Labels */
+    --text-bright: #979DAC; /* Values */
+    --button-grey: #5C677D; /* Button color */
+    --gold-chip: linear-gradient(135deg, #f0d060 0%, #e1b400 100%);
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.main-payment-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.payment-form {
+    background-color: var(--card-blue);
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.payment-form h2 {
+    color: #e9ecef; 
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    background-color: var(--input-blue);
+    border: 1px solid #33415C;
+    border-radius: 10px;
+    padding: 12px 15px;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-blue);
+}
+
+.full-width {
+    display: flex;
+    gap: 20px;
+}
+
+.full-width div {
+    flex: 1;
+}
+
+.full-width input {
+    width: 45%;
+    display: inline-block;
+}
+
+#input-ccv {
+    width: 100%;
+}
+
+.pay-btn {
+    width: 100%;
+    background-color: var(--button-grey);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.pay-btn:hover {
+    background-color: #33415C;
+    transform: translateY(-2px);
+}
+
+
+.visa-card {
+    width: 400px;
+    height: 250px;
+    background-color: var(--card-blue);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chip {
+    width: 55px;
+    height: 40px;
+    background: var(--gold-chip);
+    border-radius: 8px;
+}
+
+.card-number {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    height: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.detail-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.detail-value {
+    font-size: 0.9rem;
+    color: white;
+    min-height: 20px;
+    font-weight: 500;
+}

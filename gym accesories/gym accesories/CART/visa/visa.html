@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link href="visa.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+   <div class="main-payment-container">
+    
+    <div class="payment-form">
+        <h2>Enter Card Details</h2>
+        <div class="input-group">
+            <label>Card Holder</label>
+            <input type="text" id="input-name" placeholder="Enter your name" maxlength="20">
+        </div>
+        <div class="input-group">
+            <label>Card Number</label>
+            <input type="text" id="input-number" placeholder="Enter Credit Number" maxlength="19">
+        </div>
+        <div class="input-group full-width">
+            <div>
+                <label>Expiration</label>
+                <input type="text" id="input-month" placeholder="MM" maxlength="2">
+                <input type="text" id="input-year" placeholder="YY" maxlength="2">
+            </div>
+            <div>
+                <label>CCV</label>
+                <input type="text" id="input-ccv" placeholder="***" maxlength="3">
+            </div>
+        </div>
+        <button class="pay-btn">Confirm Payment</button>
+    </div>
+
+    <div class="card-preview-section">
+        <div class="visa-card">
+            <div class="chip"></div>
+            <div class="card-number" id="display-number"></div>
+            
+            <div class="card-details">
+                <div>
+                    <div class="detail-label">Card Holder</div>
+                    <div class="detail-value" id="display-name"></div>
+                </div>
+                <div>
+                    <div class="detail-label">Expires</div>
+                    <div class="detail-value">
+                        <span id="display-month">MM</span>/<span id="display-year">YY</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="detail-label">CCV</div>
+                    <div class="detail-value" id="display-ccv">***</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="visa.js"></script>
+</body>
+</html>

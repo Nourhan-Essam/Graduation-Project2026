@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W&P Accessories - Wellness&Power Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="css/accessories.css">
+     <link rel="stylesheet" href="../../style.css">
+         
+</head>
+<body>
+
+<header class="main-header">
+
+    <div class="logo">
+    <!-- تأكدي إن حرف الـ G في كلمة Gallery مكتوب Capital زي ما هو في الـ Folders عندك -->
+     <img src="../../Gallery/Fitness  Logo.png" alt="Logo" class="site-logo">
+    <div class="logo-name">Wellness&<span>Power</span></div>
+</div>
+
+    <nav class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#shop">Shop</a>
+        <a href="../../index.html#nutrition">Nutrition</a>
+        <a href="../../index.html#guides">Guides</a>
+        <a href="CART/cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        
+        <!-- لينك الـ Login محتاج يخرج مرتين ويدخل فولدر Sign -->
+        <a href="../../Sign/login.html" class="login-btn">Log In</a>       
+    </nav>
+</header>
+
+
+
+    <section class="acc-light-section">
+        <div class="acc-container">
+            
+            <h1 class="acc-main-title">Gym <span>Accessories</span></h1>
+            <p class="acc-sub-title">Premium gear for peak performance</p>
+            
+            <div class="acc-grid">
+                
+                <div class="acc-item-card">
+                    <img src="images/Pro max shaker.jfif" alt="Pro Mix Shaker" class="acc-item-img">
+                    <div class="acc-item-content">
+                        <h3>Pro Mix Shaker</h3>
+                        <p class="acc-item-price">$15.00</p>
+                        <div class="acc-item-stats">
+                            <span><i class="fas fa-tint"></i> 700ml</span>
+                            <span><i class="fas fa-leaf"></i> BPA Free</span>
+                        </div>
+                        <button class="add-cart-light" onclick="addToCart({id: 301, title: 'Pro Mix Shaker', price: '$15.00', img: 'Pro max shaker.jfif', desc: '700ml BPA Free'})">Add to Cart</button>
+                    </div>
+                </div>
+
+                
+<div class="acc-item-card">
+    <div class="acc-item-badge">Bestseller</div>
+    <img src="images/Leather Lifting Belt.jpeg" alt="Weightlifting Belt" class="acc-item-img">
+    <div class="acc-item-content">
+        <h3>Leather Lifting Belt</h3>
+        <p class="acc-item-price">$55.00</p>
+        <div class="acc-item-stats">
+            <span><i class="fas fa-shield-alt"></i> Back Support</span>
+            <span><i class="fas fa-check-circle"></i> Genuine Leather</span>
+        </div>
+        <button class="add-cart-light" onclick="addToCart({id: 308, title: 'Leather Lifting Belt', price: '$55.00', img: 'Leather Lifting Belt.jpeg', desc: 'Genuine Leather'})">Add to Cart</button>
+    </div>
+</div>
+
+<div class="acc-item-card">
+    <img src="images/Compression Knee Sleeves.jpeg" alt="Knee Sleeves" class="acc-item-img">
+    <div class="acc-item-content">
+        <h3>Compression Knee Sleeves</h3>
+        <p class="acc-item-price">$18.00</p>
+        <div class="acc-item-stats">
+            <span><i class="fas fa-compress-alt"></i> High Elasticity</span>
+        </div>
+        <button class="add-cart-light" onclick="addToCart({id: 309, title: 'Compression Knee Sleeves', price: '$18.00', img: 'Compression Knee Sleeves.jpeg', desc: 'Elastic Knee Support'})">Add to Cart</button>
+    </div>
+</div>
+
+<div class="acc-item-card">
+    <div class="acc-item-badge new-badge">New</div>
+    <img src="images/Slim Running Belt.jpeg" alt="Running Waist Pack" class="acc-item-img">
+    <div class="acc-item-content">
+        <h3>Slim Running Belt</h3>
+        <p class="acc-item-price">$14.00</p>
+        <div class="acc-item-stats">
+            <span><i class="fas fa-mobile-alt"></i> Fits All Phones</span>
+            <span><i class="fas fa-cloud-showers-heavy"></i> Waterproof</span>
+        </div>
+        <button class="add-cart-light" onclick="addToCart({id: 310, title: 'Slim Running Belt', price: '$14.00', img: 'Slim Running Belt.jpeg', desc: 'Waterproof Waist Pack'})">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="acc-item-card">
+    <img src="images/W&P Signature Cap.jpeg" alt="Gym Cap" class="acc-item-img">
+    <div class="acc-item-content">
+        <h3>W&P Signature Cap</h3>
+        <p class="acc-item-price">$20.00</p>
+        <div class="acc-item-stats">
+            <span><i class="fas fa-wind"></i> Breathable Fabric</span>
+        </div>
+        <button class="add-cart-light" onclick="addToCart({id: 311, title: 'W&P Signature Cap', price: '$20.00', img: 'W&P Signature Cap.jpeg', desc: 'Breathable Training Cap'})">Add to Cart</button>
+    </div>
+</div>
+
+
+<div class="acc-item-card">
+    <div class="acc-item-badge">Recovery</div>
+    <img src="images/Muscle Recovery Roller.jpeg" alt="Foam Roller" class="acc-item-img">
+    <div class="acc-item-content">
+        <h3>Muscle Recovery Roller</h3>
+        <p class="acc-item-price">$25.00</p>
+        <div class="acc-item-stats">
+            <span><i class="fas fa-mitten"></i> Deep Tissue</span>
+            <span><i class="fas fa-user-md"></i> Therapy Grade</span>
+        </div>
+        <button class="add-cart-light" onclick="addToCart({id: 312, title: 'Muscle Recovery Roller', price: '$25.00', img: 'Muscle Recovery Roller.jpeg', desc: 'Deep Tissue Roller'})">Add to Cart</button>
+</div>
+</div>
+
+                <div class="acc-item-card">
+                    <img src="images/Power Grip Gloves.jpeg" alt="Training Gloves" class="acc-item-img">    
+                    <div class="acc-item-content">
+                        <h3>Power Grip Gloves</h3>
+                        <p class="acc-item-price">$22.00</p>
+                        <div class="acc-item-stats">
+                            <span><i class="fas fa-hands"></i> Small/Large</span>
+                        </div>
+                       <button class="add-cart-light" onclick="addToCart({id: 303, title: 'Power Grip Gloves', price: '$22.00', img: 'Power Grip Gloves.jpeg', desc: 'Small/Large Grip'})">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="acc-item-card">
+                    <img src="images/Active Sport Bag.jpeg" alt="Gym Bag" class="acc-item-img">
+                    <div class="acc-item-content">
+                        <h3>Active Sport Bag</h3>
+                        <p class="acc-item-price">$45.00</p>
+                        <div class="acc-item-stats">
+                            <span><i class="fas fa-box"></i> 40 Liters</span>
+                            <span><i class="fas fa-shoe-prints"></i> Shoe Compartment</span>
+                        </div>
+                        <button class="add-cart-light" onclick="addToCart({id: 304, title: 'Active Sport Bag', price: '$45.00', img: 'Active Sport Bag.jpeg', desc: '40L Training Bag'})">Add to Cart</button>
+                </div>
+                </div>
+                
+                <div class="acc-item-card">
+                    <div class="acc-item-badge new-badge">New</div>
+                    <img src="images/Fabric Resistance Bands.jpeg" alt="Resistance Bands" class="acc-item-img">
+                    <div class="acc-item-content">
+                        <h3>Fabric Resistance Bands</h3>
+                        <p class="acc-item-price">$28.00</p>
+                        <div class="acc-item-stats">
+                            <span><i class="fas fa-layer-group"></i> 3 Levels</span>
+                        </div>
+                      <button class="add-cart-light" 
+    onclick="addToCart({id: 305, title: 'Fabric Resistance Bands', price: '$28.00', img: 'Fabric Resistance Bands.jpeg', desc: 'Heavy Duty Bands'})">
+    Add to Cart
+</button>
+                    </div>
+                </div>
+
+                <div class="acc-item-card">
+                    <img src="images/Quick-Dry Towel.jpeg" alt="Gym Towel" class="acc-item-img">
+                    <div class="acc-item-content">
+                        <h3>Quick-Dry Towel</h3>
+                        <p class="acc-item-price">$12.00</p>
+                        <div class="acc-item-stats">
+                            <span><i class="fas fa-expand-arrows-alt"></i> 100x50 cm</span>
+                        </div>
+                    
+<button class="add-cart-light" 
+    onclick="addToCart({id: 6, title: 'Quick-Dry Towel', price: '$12.00', img: 'Quick-Dry Towel.jpeg', desc: '100x50 cm'})">
+    Add to Cart
+</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </section>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast">
+    <span id="toast-message"></span>
+</div>
+    
+    <script src="javaScript/accessories.js"></script>
+</body>
+</html>
+    
+</body>
+</html>

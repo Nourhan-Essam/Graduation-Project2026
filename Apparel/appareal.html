@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appareal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="appareal.css">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+ <!--nav bar-->   
+<header class="main-header">
+
+    <div class="logo" >
+    <img src="../Gallery/Fitness  Logo.png" alt="Logo" class="site-logo">
+    <div class="logo-name">Wellness&<span>Power</span></div>
+    </div>
+
+    <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#shop">Shop</a>
+        <a href="../index.html#nutrition">Nutrition</a>
+        <a href="../index.html#guides">Guides</a>
+        <a href="../gym accesories/gym accesories/CART/cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        <a href="../Sign/login.html" class="login-btn">Log In</a>           
+    </nav>
+</header>
+
+<div class="appareal-wrapper">
+
+  <header class="appareal-header">
+
+    <h1>Appa<span>real</span></h1>
+
+    <div class="filter-navigation">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+
+    <button class="filter-btn avatar-btn" data-filter="men">
+        <div class="avatar-wrapper">
+            <img src="images/avatar man.jpg" alt="Men Category">
+        </div>
+         <span>MEN</span>
+    </button>
+
+
+  
+  <button class="filter-btn avatar-btn" data-filter="women">
+        <div class="avatar-wrapper">
+            <img src="images/avatar women.jpg" alt="Women">
+        </div>
+        <span>WOMEN</span>
+    </button>
+    
+    <button class="filter-btn avatar-btn" data-filter="children">
+        <div class="avatar-wrapper">
+            <img src="images/kids-wear.jpg" alt="Children">
+        </div>
+        <span>CHILDREN</span>
+    </button>
+</div>
+</header>
+
+
+<div class="products-grid">
+    <!-- m1 -->
+    <div class="product-card men">
+        <div class="product-img">
+            <img src="images/men-wear.jpg3" alt="Men Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training T-Shirt</h4>
+            <p>$25.00</p>
+            <button class="add-btn" onclick="addToCart('Training T-Shirt', '$25.00', 'High quality fabric', 'images/men-wear.jpg3')">ADD TO CART</button>
+        </div>        
+    </div>
+
+    <!-- c2 -->
+    <div class="product-card children">
+        <div class="product-img">
+            <img src="images/kids-wear2.jpg" alt="Kids Wear">
+        </div>
+        <div class="product-info">
+            <h4>Junior Sport Set</h4>
+            <p>$20.00</p>
+            <button class="add-btn" onclick="addToCart('Junior Sport Set', '$20.00', 'Comfortable set for junior athletes', 'images/kids-wear2.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+     
+    <!-- w2 -->
+    <div class="product-card women">
+        <div class="product-img">
+            <img src="images/women-wear.jpg" alt="Women Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training Suit</h4>
+            <p>$30.00</p>
+            <button class="add-btn" onclick="addToCart('Training Suit', '$30', 'Elastic fabric', 'images/women-wear.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+     <!-- c4 -->
+     <div class="product-card children">
+        <div class="product-img">
+            <img src="images/kids-wear.jpg" alt="Kids Wear">
+        </div>
+        <div class="product-info">
+            <h4>Junior Sport Set</h4>
+            <p>$20.00</p>
+            <button class="add-btn" onclick="addToCart('Kids Training Set', '$20.00', 'Comfortable set for junior athletes', 'images/kids-wear.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- m2 -->
+    <div class="product-card men">
+        <div class="product-img">
+            <img src="images/men-wear.jpg2" alt="Men Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training T-Shirt</h4>
+            <p>$25.00</p>
+            <button class="add-btn" onclick="addToCart('Training T-Shirt', '$25.00', 'High quality fabric', 'images/men-wear.jpg2')">ADD TO CART</button>
+        </div>        
+    </div>
+
+
+    <!-- w4 -->
+    <div class="product-card women">
+        <div class="product-img">
+            <img src="images/trwomen.jpg" alt="Women Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training Hoodie</h4>
+            <p>$26.00</p>
+            <button class="add-btn" onclick="addToCart('Training Hoodie', '$26', 'Elastic fabric', 'images/trwomen.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- w1 -->
+    <div class="product-card women">
+        <div class="product-img">
+            <img src="images/women-wear1.jpg" alt="Women Wear">
+        </div>
+        <div class="product-info">
+            <h4>Yoga Leggings</h4>
+            <p>$30.00</p>
+            <button class="add-btn" onclick="addToCart('Women Leggings', '$30', 'Elastic fabric', 'images/women-wear1.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+    
+
+    <!-- c1 -->
+    <div class="product-card children">
+        <div class="product-img">
+            <img src="images/kids-wear3.jpg" alt="Kids Wear">
+        </div>
+        <div class="product-info">
+            <h4>Junior Sport Set</h4>
+            <p>$20.00</p>
+            <button class="add-btn" onclick="addToCart('Junior Sport Set', '$20.00', 'Comfortable set for junior athletes', 'images/kids-wear3.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- c2 -->
+    <div class="product-card children">
+        <div class="product-img">
+            <img src="images/kids-wear2.jpg" alt="Kids Wear">
+        </div>
+        <div class="product-info">
+            <h4>Junior Sport Set</h4>
+            <p>$20.00</p>
+            <button class="add-btn" onclick="addToCart('Junior Sport Set', '$20.00', 'Comfortable set for junior athletes', 'images/kids-wear2.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- m3 -->
+    <div class="product-card men">
+        <div class="product-img">
+            <img src="images/man1.jpg" alt="Men Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training T-Shirt</h4>
+            <p>$25.00</p>
+            <button class="add-btn" onclick="addToCart('Training T-Shirt', '$25.00', 'High quality fabric', 'images/men1.jpg')">ADD TO CART</button>
+        </div>        
+    </div>
+
+     <!-- w4 -->
+    <div class="product-card women">
+        <div class="product-img">
+            <img src="images/activate.jpg" alt="Women Wear">
+        </div>
+        <div class="product-info">
+            <h4>Activewear Tee</h4>
+            <p>$30.00</p>
+            <button class="add-btn" onclick="addToCart('Activewear Tee', '$30', 'Elastic fabric', 'images/activate.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+    <!-- m4 -->
+     <div class="product-card men">
+        <div class="product-img">
+            <img src="images/men-wear.jpg" alt="Men Wear">
+        </div>
+        <div class="product-info">
+            <h4>Training T-Shirt</h4>
+            <p>$25.00</p>
+            <button class="add-btn" onclick="addToCart('Training T-Shirt', '$25.00', 'High quality fabric', 'images/men-wear.jpg')">ADD TO CART</button>
+        </div>        
+    </div>
+
+    <!-- w3 -->
+<div class="product-card women">
+        <div class="product-img">
+            <img src="images/women-wear2.jpg" alt="Women Wear">
+        </div>
+        <div class="product-info">
+            <h4>Yoga Leggings</h4>
+            <p>$30.00</p>
+            <button class="add-btn" onclick="addToCart('Yoga Leggings', '$40', 'Elastic fabric', 'images/women-wear2.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+
+     <!-- c3 -->
+    <div class="product-card children">
+        <div class="product-img">
+            <img src="images/kids-wear1.jpg" alt="Kids Wear">
+        </div>
+        <div class="product-info">
+            <h4>Junior Sport Set</h4>
+            <p>$20.00</p>
+            <button class="add-btn" onclick="addToCart('Junior Sport Set', '$20.00', 'Comfortable set for junior athletes', 'images/kids-wear1.jpg')">ADD TO CART</button>
+        </div>
+    </div>
+</div>
+
+<div id="toast" class="toast">
+    <span id="toast-message"></span>
+</div>
+
+  <script src="appareal.js"></script>
+
+</body>
+</html>
