@@ -5,7 +5,7 @@
 ## 🤯 The Problem & Solution
 Long sitting hours lead to physical pain, obesity, and eye strain. This project makes fitness a lifestyle by providing everything a beginner needs—from nutrition and guides to equipment—all in one place.
 
-## Live Demo: (
+## Live Demo: (https://nourhan-essam.github.io/Graduation-Project2026/)
 
 ## 🚀 Key Features
 
